@@ -1,0 +1,29 @@
+{
+  "name": "kepzel",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "NODE_ENV=development && parcel app/app.html & wait-on http://localhost:1234 && electron app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "build": {
+    "appId": "engie",
+    "files": [
+      "dist/**/*",
+      "assets/"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "electron": "^6.0.11",
+    "sass": "^1.29.0",
+    "wait-on": "^3.3.0"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
