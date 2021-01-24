@@ -24,6 +24,7 @@
     "wait-on": "^3.3.0"
   },
   "dependencies": {
+    "aframe": "^1.1.0",
     "parcel-bundler": "^1.12.3"
   }
 }

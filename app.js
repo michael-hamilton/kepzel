@@ -5,7 +5,7 @@ function createWindow () {
         width: 640,
         height: 480,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: false
         }
     });
 
