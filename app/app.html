@@ -8,13 +8,24 @@
 <body>
     <div id="display">
         <a-scene>
-            <a-box position="0 1 -5" rotation="10 45 10" color="#ffffff"></a-box>
-            <a-plane position="0 0 -5" rotation="-90 0 0" width="5" height="5" color="#ffffff"></a-plane>
+            <a-camera position="0 0 -0.5"></a-camera>
             <a-sky color="#000"></a-sky>
-            <a-light id="light1" type="point" color="red" position="-3 5 -10"></a-light>
-            <a-light id="light2" type="point" color="green" position="3 5 -10"></a-light>
-            <a-light id="light3" type="point" color="blue" position="-3 5 10"></a-light>
-            <a-light id="light4" type="point" color="yellow" position="1 1 -4"></a-light>
+
+            <a-plane position="0 2 -4" rotation="90 0 0" width="8" height="8" color="#000"></a-plane>
+            <a-plane position="0 -2 -4" rotation="-90 0 0" width="8" height="8" color="#ffffff"></a-plane>
+
+            <a-plane position="0 0 -8" rotation="0 0 0" width="8" height="4" color="#ffffff"></a-plane>
+            <a-plane position="0 0 0" rotation="0 180 0" width="8" height="4" color="#ffffff"></a-plane>
+            <a-plane position="-4 0 -4" rotation="0 90 0" width="8" height="4" color="#ffffff"></a-plane>
+            <a-plane position="4 0 -4" rotation="0 -90 0" width="8" height="4" color="#ffffff"></a-plane>
+
+            <a-light castShadow="true" id="light1" type="point" color="red" position="-3 1.5 -7"></a-light>
+            <a-light castShadow="true" id="light2" type="point" color="green" position="3 1.5 -7"></a-light>
+            <a-light castShadow="true" id="light3" type="point" color="blue" position="-3 1.5 -2"></a-light>
+            <a-light castShadow="true" id="light4" type="point" color="yellow" position="3 1.5 -2"></a-light>
+
+            <a-box position="0 0 -4" color="#ffffff" rotation="-180 0 0" animation="property: rotation; to: 180 360 360; easing: linear; loop: true; dur: 30000"></a-box>
+
         </a-scene>
     </div>
     <script src="./app.js"></script>
